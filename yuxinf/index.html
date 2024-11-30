@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Header -->
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuxin Fang Portfolio</title> 
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+
+<!-- First Body -->
+<body>
+    <nav id="desktop-nav">
+        <!-- My logo -->
+        <div class="logo"> 
+            <img 
+                src="./assets/YuxinF_Logo.png" 
+                alt="Logo of Yuxin Fang" 
+            />  
+        </div>
+
+        <!-- List of my pages that are gonna get linked -->
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li class="dropdown">
+                    <a href="#experience" class="dropdown-btn">Experience</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+        <div class="logo"> 
+            <img 
+                src="./assets/YuxinF_Logo.png" 
+                alt="Logo of Yuxin Fang" 
+            />  
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li class="dropdown">
+                    <a href="#experience" class="dropdown-btn" onclick="toggleMenu()">Experience</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                        <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+                        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_text">
+            <p class="section_text_p1"> Hello, I'm </p>
+            <h1 class="title"> Yuxin Fang </h1>
+            <p class="section_text_p2"> IT Network Security Student </p>
+            <div class="btn-container">
+                <a 
+                    class="btn btn-color-2" 
+                    href="./assets/Yuxin Fang Resume.pdf"
+                    target="_blank"> 
+                    Resume 
+                </a>
+                <a 
+                    class="btn btn-color-1" 
+                    href="#contact">
+                    Contact Info  
+                </a>
+            </div>
+            <div id="socials-container">
+                <a
+                    href="https://www.linkedin.com/in/yuxin-fang/"
+                    target="_blank">
+                    <img 
+                        src="./assets/linkedin.png" 
+                        alt="LinkedIn Profile" 
+                        class="icon1"  
+                    />
+                </a>
+                <a
+                    href="https://github.com/itzkaylie"
+                    target="_blank">
+                    <img 
+                        src="./assets/github.png" 
+                        alt="Github Profile" 
+                        class="icon1"  
+                    />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="about_text_p">Get To Know More</p>
+        <h1 class="title2">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img 
+                    src="./assets/YuxinF_Pic.jpg" 
+                    alt="Profile Picture"
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/experience.png" 
+                            alt="Experience Icon"
+                            class="icon2"
+                        />
+                        <h3>Experience</h3>
+                        <p>2nd Year <br /> Cybersecurity, Networking & Computer Science</p> 
+                    </div>
+                    <div class="details-container">
+                        <img 
+                            src="./assets/education.png" 
+                            alt="Education Icon"
+                            class="icon2"
+                        />
+                        <h3>Education</h3>
+                        <p>Junior Year <br /> Thomas A. Edison Career & Technical High School</p> 
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p class="text_container_1"> 
+                        Hello! My name is Yuxin Fang, and I am a Junior at Thomas A. Edison Career & Technical High School, where I am enrolled in the IT Network/Cybersecurity course. I have a strong passion for Computer Science and Web Design, and I am eager to learn and grow in these fields. I am proficient in Python, HTML, and CSS and currently enhancing my skills in Java, JavaScript, and APIs to create engaging and functional websites. 
+                    </p>
+                    <p class="text_container_2">
+                        Aside from academics, I also enjoy playing basketball and snowboarding. I am also a proud member of the National Technical Honor Society. I actively participate in fundraising events and community projects to make a positive impact. I want to use what I learn in the technology field to solve problems and create opportunities, both in school and the community.
+                    </p>
+                </div>
+            </div>
+            <img 
+                src="./assets/arrow.png" 
+                alt="Arrow" 
+                class="icon arrow"
+                onclick="location.href='#education'"
+            />
+        </div>
+    </section> 
+
+    <section id="education">
+        <h1 class="title3">Education</h1>
+        <div class="education-grade-container">
+            
+            <!-- 9th Grade -->
+            <div class="grade-container">
+                <img 
+                src="./assets/icons8-9-96.png" 
+                alt="9th grade" 
+                class="icon3" 
+                />
+                <p>
+                    <ul>
+                        <li>Physical Education</li>
+                        <li>Living Environment</li>
+                        <li>Music Appreciation</li>
+                        <li>Global History 9</li>
+                        <li>Algebra 1</li>
+                        <li>English 9</li>
+                        <li>Spanish</li>
+                        <li>Health</li>
+                        <li>Art</li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- 10th Grade -->
+            <div class="grade-container">
+                <img 
+                src="./assets/icons8-10-96.png" 
+                alt="10th grade" 
+                class="icon3" 
+                />
+                <p>
+                    <ul>
+                        <li>AP Computer Science A</li>
+                        <li>IT Fundamentals</li>
+                        <li>Global History 10</li>
+                        <li>Physical Education</li>
+                        <li>English 10</li>
+                        <li>Chemistry</li>
+                        <li>Geometry</li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- 11th Grade -->
+            <div class="grade-container">
+                <img 
+                src="./assets/icons8-11-96.png" 
+                alt="11th grade" 
+                class="icon3" 
+                />
+                <p>
+                    <ul>
+                        <li>College Now - Intro to Computer Science (Term 1)</li>
+                        <li>College Now - Sociology (Term 1)</li>
+                        <li>Physical Education</li>
+                        <li>IT Networking</li>
+                        <li>AP US History</li>
+                        <li>English 11</li>
+                        <li>Geometry</li>
+                        <li>Physics</li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- 12th Grade -->
+            <div class="grade-container">
+                <img 
+                src="./assets/icons8-12-96.png" 
+                alt="12th grade" 
+                class="icon3" 
+                />
+                <p>
+                    <ul>
+                        <li>IT Cyber Security</li>
+                        <li>AP Macroeconomics</li>
+                        <li>Physical Education</li>
+                        <li>English 12</li>
+                        <li>AP Calc AB</li>
+                    </ul>
+                </p>
+            </div>
+            <img 
+                src="./assets/arrow.png" 
+                alt="Arrow" 
+                class="icon arrow"
+                onclick="location.href='#projects'"
+            />
+        </div>
+    </section>  
+
+    <section id="skills"> 
+        <h1 class="title3">Skills</h1>
+        <div class="skill-logo-container">
+
+            <!-- HTML -->
+            <div class="logo-container">
+                <img 
+                    src="./assets/HTML.png 15-21-07-602.png"
+                    alt="HTML Logo"
+                    class="icon4"
+                />
+            <!-- CSS -->
+            <div class="logo-container">
+                <img 
+                    src="./assets/css3-logo-png-transparent.png"
+                    alt="CSS Logo"
+                    class="icon4"
+                />
+            <!-- JAVASCRIPT -->
+            <div class="logo-container">
+                <img 
+                    src="./assets/JavaScript-Logo.png"
+                    alt="Javascript Logo"
+                    class="icon4"
+                />
+            <!-- PYTHON -->
+            <div class="logo-container">
+                <img 
+                    src="./assets/python-logo-png_seeklogo-273830.png"
+                    alt="CSS Logo"
+                    class="icon4"
+                />
+            <!-- JAVA -->
+            <div class="logo-container">
+                <img 
+                    src="./assets/java-logo-1.png"
+                    alt="Java Logo"
+                    class="icon4"
+                />
+             </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="certifications">
+        <h1 class="title3">Certifications</h1>
+        <div class="cert-pics-container"></div>
+        <div class="cert-container">
+        <div 
+            data-iframe-width="150" 
+            data-iframe-height="270" 
+            data-share-badge-id="fea43f4d-f450-47c4-af0a-6ef5d46b5fa8" 
+            data-share-badge-host="https://www.credly.com">
+        </div>
+        <script 
+            type="text/javascript" async 
+            src="//cdn.credly.com/assets/utilities/embed.js">
+        </script>
+        </div>
+    </section> -->
+    
+    <section id="contact"> 
+        <p class="section_text_p1"> Contact Me </p>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container"> 
+                <img 
+                src="./assets/email.png"
+                alt="Email Icon"
+                class="icon2"
+                />
+                <p>
+                    <a href="mailto:yu.fangIT@gmail.com">yu.fangIT@gmail.com</a>
+                </p>
+            </div>
+            <div class="contact-info-container"> 
+                <img 
+                src="./assets/icons8-phone-100.png"
+                alt="Phone Icon"
+                class="icon2"
+                />
+                <p>
+                    (718)666-6834
+                </p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

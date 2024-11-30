@@ -545,3 +545,14 @@ contact-info-container p {
 .skill-logo-container img:hover {
     transform: translateY(-5px); /* Subtle lift effect on hover */
 }
+
+/* FOOTER */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+}

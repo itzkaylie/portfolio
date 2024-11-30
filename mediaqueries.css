@@ -1,3 +1,13 @@
+@media screen and (max-width: 1400px) {
+   #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+   }
+   .about-containers {
+    flex-wrap: wrap;
+   }
+}
+
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
@@ -5,4 +15,79 @@
     #hamburger-nav {
         display: flex;
     }
+
+    #profile,
+    .section-container {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    section, 
+    .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .section_pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto; /* Centers the container horizontally */
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    #contact, footer {
+        height: 40vh;
+    }
+    #profile {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        text-align: center; /* Center-align text inside */
+        height: 100vh; /* Make the section fill the full viewport height */
+        margin-bottom: 0;
+        padding: 0; /* Remove unnecessary padding */
+    }
+
+    article {
+        font-size: 1rem;
+    }
+    footer-nav {
+        height: fit-content;
+        margin-bottom: 2rem;;
+    }
+    .about-container, 
+    .contact-info-upper-container, 
+    .btn-container {
+        flex-wrap: wrap;
+    }
+    .contact-info-container {
+        margin: 0;
+    }
+    .contact-info-container p, 
+    .nav-links li a {
+        font-size: 1rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .logo-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centers the skills */
+        gap: 1rem; /* Adds spacing between items */
+    }
+    
+    .skill-item {
+        flex: 1 1 calc(33.33% - 1rem); /* Adjusts size to fit 3 in a row with a gap */
+        text-align: center; /* Centers text */
+    }
+    
 }
